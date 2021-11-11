@@ -1,0 +1,618 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#navbar{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 70px;
+    background-color: #343A40;
+}
+li{
+    list-style-type: none;
+    float: right;
+    padding-right: 40px;
+}
+li a{
+    position: relative;
+    top: 25px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background-color: #343A40;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+}
+
+span{
+    color: crimson;
+}
+.home-main{
+    background-image: url(images/slika.jpg);
+    background-size: cover;
+    background-position: top;
+    height: 700px;
+}
+#container{
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 20px 50px;
+    position: relative;
+    top: 150px;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-shadow: 2px 2px 7px white;
+    text-shadow: 2px 2px 11px white;
+    text-align: center;
+    color: rgba(255, 255, 255, 75%);;
+    background-color: rgba(0, 0, 0, 40%);
+}
+.about-body{
+    background-color: gray;
+    color: white;
+}
+.about-main p:first-of-type{
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 70px 10px;
+    padding: 10px 20px;
+    height: 400px;
+    overflow: auto;
+}
+.about-main p:nth-of-type(2){
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 10px 10px;
+    padding: 10px 20px;
+    height: 400px;
+    overflow: auto;
+}
+.about-main p:last-of-type{
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 30px 10px;
+    padding: 10px 20px;
+    margin-bottom: 100px;
+    
+}
+.skills-body{
+    overflow-x: hidden;
+    background-color: gray;
+}
+.skills{
+    height: 750px;
+}
+.header-skills{
+    background-image: url(images/slika\ 2.jpg);
+    background-size: cover;
+    height: 500px;
+    background-position:left;
+}
+.header-skills h1{
+    color: black;
+    font-weight: bold;
+    padding: 350px 220px;
+    font-size: 50px;
+    text-decoration: underline;
+    text-shadow: 2px 2px 4px black;
+}
+.html{
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-left: 30px;
+    height: 300px;
+    width: 180px;
+    display: inline-block;
+}
+.html h2{
+    color: white;
+    padding: 10px 60px;
+}
+#slika-html{
+    width: 200px;
+}
+#button-html{
+    border: 1px solid white;
+    background-color: #0069d9;
+    margin-left: 55px;
+    padding: 10px;
+    color: white;
+}
+.css{
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-right: 40px;
+    height: 300px;
+    width: 180px;
+    float: right;
+}
+.css h2{
+    color: white;
+    padding: 10px 60px;
+}
+#slika-css{
+    width: 200px;
+}
+#button-css{
+    border: 1px solid white;
+    background-color: #0069d9;
+    margin-left: 55px;
+    padding: 10px;
+    color: white;
+}
+.js{
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-left: 30px;
+    height: 300px;
+    width: 180px;
+    display: inline-block;
+}
+.js h2{
+    color: white;
+    padding: 10px 45px;
+}
+#slika-js{
+    width: 150px;
+    margin: 20px 25px;
+}
+#button-js{
+    border: 1px solid white;
+    background-color: #0069d9;
+    margin: 10px 55px;
+    padding: 10px;
+    color: white;
+    width: 90px;
+}
+.react{
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-right: 40px;
+    height: 300px;
+    width: 180px;
+    float: right;
+}
+.react h2{
+    color: white;
+    padding: 10px 45px;
+}
+#slika-react{
+    width: 150px;
+    margin: 20px 25px;
+}
+#button-react{
+    border: 1px solid white;
+    background-color: #0069d9;
+    margin: 10px 55px;
+    padding: 10px;
+    color: white;
+    width: 90px;
+}
+.contact{
+    background-color: gray;
+    margin-left: 20px;
+    font-size: 18px;
+    margin-top: 35px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+#submit{
+    background-color: #0069d9;
+    height: 40px;
+    width: 100px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#mailto{
+    text-decoration: none;
+    color: white;
+}
+
+@media only screen and (min-width: 600px){
+    #container{
+        position: relative;
+        left: 20%;
+        width: 350px;
+        text-align: center;
+    }
+    li{
+        padding-right: 60px;
+    }
+    .about-main p:first-of-type{
+        overflow-y: hidden;
+        height: 500px;
+        padding-top: 30px;
+        overflow: auto;
+    }
+    .header-skills h1{
+        padding-left: 300px;
+    }
+    .html{
+        width: 230px;
+    }
+    .html h2{
+        padding-left: 80px;
+    }
+    #slika-html{
+        margin-left: 20px;
+    }
+    #button-html{
+        margin-left: 70px;
+        width: 100px;
+        height: 35px;
+    }
+    .css{
+        width: 230px;
+    }
+    .css h2{
+        padding-left: 100px;
+    }
+    #slika-css{
+        margin-left: 30px;
+    }
+    #button-css{
+        margin-left: 70px;
+        width: 100px;
+        height: 35px;
+        
+    }
+    .js{
+        width: 230px;
+    }
+    .js h2{
+        padding-left: 70px;
+    }
+    #slika-js{
+        margin-left: 40px;
+    }
+    #button-js{
+        margin-left: 70px;
+        width: 100px;
+        height: 35px;
+    }
+    .react{
+        width: 230px;
+    }
+    .react h2{
+        padding-left: 95px;
+    }
+    #slika-react{
+        margin-left: 50px;
+    }
+    #button-react{
+        margin-top: 25px;
+        margin-left: 70px;
+        width: 100px;
+        height: 35px;
+    }
+    .contact-main{
+        font-size: 20px;
+    }
+    input{
+        width: 300px;
+        height: 20px;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .home-main{
+         background-position: top;
+    }
+    #container{
+        position: relative;
+        left: 20%;
+        text-align: center;
+    }
+    li{
+        padding-right: 70px;
+    }
+    .about-main p:first-of-type{
+        overflow-y: hidden;
+        height: 500px;
+        padding-top: 30px;
+    }
+    .header-skills h1{
+        padding-left: 400px;
+    }
+    .html{
+        width: 350px;
+    }
+    .html h2{
+        padding-left: 130px;
+    }
+    #slika-html{
+        width: 200px;
+        margin-left: 70px;
+    }
+    #button-html{
+        margin-left: 110px;
+        width: 120px;
+    }
+    .css{
+        width: 350px;
+    }
+    .css h2{
+        padding-left: 140px;
+    }
+    #slika-css{
+        margin-left: 70px;
+    }
+    #button-css{
+        margin-left: 110px;
+        width: 120px;
+    }
+    .js{
+        width: 350px;
+    }
+    .js h2{
+        padding-left: 110px;
+    }
+    #slika-js{
+        margin-left: 100px;
+    }
+    #button-js{
+        margin-left: 110px;
+        width: 120px;
+    }
+    .react{
+        width: 350px;
+    }
+    .react h2{
+        padding-left: 140px;
+    }
+    #slika-react{
+        margin-left: 100px;
+    }
+    #button-react{
+        margin-left: 110px;
+        width: 120px;
+    }
+    .contact{
+        overflow: hidden;
+    }
+    aside{
+        float: right;
+        margin: 60px 20px;
+        font-size: 20px;
+        
+    }
+    input{
+        width: 400px;
+        height: 30px;
+    }
+   
+}
+@media only screen and (min-width: 992px){
+    #container{
+        position: relative;
+        left: 20%;
+        width: 500px;
+    }
+    li{
+        padding-right: 80px;
+    }
+    .about-main div{
+        column-count: 2;
+        column-gap: 100px;
+        max-height: 1000px;
+        
+    }
+    .about-main p:first-of-type{
+        overflow-y: hidden;
+        height: 500px;
+        padding-top: 30px;
+        border: none;
+    }
+    .about-main p:nth-of-type(2){
+        height: 350px;
+        float: right;
+        margin: 30px;
+        border: none;
+    }
+    .about-main p:last-of-type{
+        float: right;
+        border: none;
+        
+    }
+    .header-skills{
+        background-position: top;
+    }
+    .header-skills h1{
+        padding-left: 500px;
+    }
+    .skills{
+        height: 500px;
+    }
+    .html{
+        width: 250px;
+        position: absolute;
+        left: -15px;
+    }
+    .html h2{
+        padding-left: 90px;
+    }
+    #slika-html{
+        width: 200px;
+        margin-left: 30px;
+    }
+    #button-html{
+        margin-left: 70px;
+        width: 120px;
+    }
+    .css{
+        width: 250px;
+        position: absolute;
+        left: 300px;
+    }
+    .css h2{
+        padding-left: 100px;
+    }
+    #slika-css{
+        width: 200px;
+        margin-left: 30px;
+    }
+    #button-css{
+        margin-left: 70px;
+        width: 120px;
+    }
+    .js{
+        width: 250px;
+        position: absolute;
+        left: 560px;
+    }
+    .js h2{
+        padding-left: 70px;
+    }
+    #slika-js{
+        width: 150px;
+        position: relative;
+        right: 50px;
+        
+    }
+    #button-js{
+        margin-left: 70px;
+        width: 120px;
+    }
+    .react{
+        position: absolute;
+        left: 890px;
+        width: 250px;
+    }
+    .react h2{
+        padding-left: 90px;
+    }
+    #slika-react{
+        width: 180px;
+        margin-left: 40px;  
+    }
+    #button-react{
+        margin-left: 70px;
+        width: 120px;
+    }
+    
+    aside{
+       float: right;
+       margin: 20px 20px;
+    }
+    input{
+        width: 600px;
+        height: 35px;
+    }
+    #message{
+        height: 150px;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    #container{
+        position: relative;
+        top: 200px;
+        left: 30%;
+        text-align: center;
+    }
+    li{
+        padding-right: 100px;
+    }
+    
+    .about-main div{
+        column-count: 2;
+        column-gap: 100px;
+        max-height: 1000px;
+        
+    }
+    .about-main p:first-of-type{
+        overflow-y: hidden;
+        height: 500px;
+        margin-top: 100px;
+        border: none;
+    }
+    .about-main p:nth-of-type(2){
+        height: 350px;
+        float: right;
+        padding: 20px;
+        border: none;
+    }
+    .about-main p:last-of-type{
+        float: right;
+        border: none;
+    }
+    .skills{
+        height: 500px;
+    }
+    .header-skills h1{
+        padding-left: 700px;
+    }
+    .html{
+        width: 350px;
+    }
+    .html h2{
+        padding-left: 140px;
+    }
+    #slika-html{
+        margin-left: 80px;
+    }
+    #button-html{
+        margin-left: 120px;
+    }
+    .css{
+        width: 350px;
+        left: 400px;
+    }
+    .css h2{
+        padding-left: 150px;
+    }
+    #slika-css{
+        margin-left: 80px;
+    }
+    #button-css{
+        margin-left: 120px;
+    }
+    .js{
+        width: 350px;
+        left: 750px;
+    }
+    .js h2{
+        padding-left: 120px;
+    }
+    #slika-js{
+        margin-left: 150px;
+    }
+    #button-js{
+        margin-left: 115px;
+    }
+    .react{
+        width: 350px;
+        left: 1150px;
+    }
+    .react h2{
+        padding-left: 140px;
+    }
+    #slika-react{
+        margin-left: 90px;
+    }
+    #button-react{
+        margin-left: 115px;
+        position: relative;
+        bottom: 12px;
+    }
+    
+    
+}
