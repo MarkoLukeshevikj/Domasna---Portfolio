@@ -1,0 +1,27 @@
+nav{
+    position: fixed;
+    height: 60px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: #343A40;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 20px;   
+}
+nav a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 75%);
+    padding: 20px;
+}
+
+footer{
+    background-color: #343A40;
+    color: white;
+    height: 50px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

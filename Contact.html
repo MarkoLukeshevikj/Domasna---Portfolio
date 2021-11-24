@@ -4,71 +4,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Contact</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/contact.css">
+    <title>Document</title>
 </head>
-<body class="contact">
-    <nav id="navbar">
-        <ul>
-            <li><a style="text-decoration: underline;" href="Contact.html" >Contact</a></li>
-            <li><a href="Skills.html" target="_blank">Skills</a></li>
-            <li><a href="About.html" target="_blank">About</a></li>
-            <li><a href="Home.html" target="_blank">Home</a></li>
-        </ul>
+<body>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a style="text-decoration: underline;"href="contact.html" >Contact</a>
     </nav>
-       <br>
-       <br>
-       <aside>
-        <div>
-            <h1>Contact Details</h1>
-            <br>
-            <p><b>Marko Lukeshevikj</b></p>
-            <p><b>ul. Nikola Tesla 4/2-14</b></p>
-            <p><b>1000 Skopje, Macedonia</b></p>
-            <br>
-            <p><b>P:</b> +389 (0)72 226 363</p>
-            <br>
-            <p><b>E:</b><a id="mailto" href="mailto:marko.lukesevik@hotmail.com"> marko.lukesevik@hotmail.com</a></p>
-        </div>
-    </aside>
-    <br>
-    
-        <main class="contact-main">
-            <h2>Send me a message</h2>
-            <br>
-            <label for="john">Full Name:</label>
-            <br>
-            <input id="john" type="text" placeholder="John">
-            <br>
-            <br>
-            <label for="phone">Phone Number:</label>
-            <br>
-            <input id="phone" type="text" placeholder="Doe">
-            <br>
-            <br>
+     
+    <main class="contact-main">
+         <section class="contact">
+             
+             <h1>Send me a message</h1>
+
+            <div class="name">
+                <label for="john">Full Name:</label>
+                <br>
+                <input id="john" type="text" placeholder="John">
+            </div>
+
+            <div class="number">
+                <label for="phone">Phone Number:</label>
+                <br>
+                <input id="phone" type="text" placeholder="Doe">
+            </div>
+
+            <div class="email">
             <label for="email">Email Address:</label>
             <br>
             <input id="email" type="text" placeholder="email@example.com">
-            <br>
-            <br>
+            </div>
+
+            <div>
             <label for="message">Message:</label>
             <br>
             <input id="message" type="text">
-            <br>
-            <br>
+            </div>
+
             <label for="submit"></label>
             <input id="submit" type="submit">
-       </main>
-       <br>
-      
-       
-       <footer id="copyright">
+        </section>
+
+         <aside>
+            <h1>Contact Details</h1>
+            
+            <p><b>Marko Lukeshevikj</b></p>
+            <p><b>ul. Nikola Tesla 4/2-14</b></p>
+            <p><b>1000 Skopje, Macedonia</b></p>
+            
+            <p><b>P:</b> +389 (0)72 226 363</p>
+            
+            <p><b>E:</b><a id="mailto" href="mailto:marko.lukesevik@hotmail.com"> marko.lukesevik@hotmail.com</a></p>
+        </aside>
+   </main>
+
+
+
+    <footer>
         <p>Copyright © Marko Lukeshevikj 2021</p>
-       </footer>
-
-
-    
-   
-
+    </footer>
 </body>
 </html>

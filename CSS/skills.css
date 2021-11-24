@@ -1,0 +1,53 @@
+*{ margin: 0;}
+
+header{
+    background-image: url(../assets/images/slika\ 2.jpg);
+    background-size: cover;
+    height: 46.5vh;
+    background-position: top;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-decoration: underline;
+    padding-bottom: 20px;
+
+}
+
+main{
+    background-color: rgba(0, 0, 0, 50%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+h2{
+    color: white;
+}
+.kopce{
+    width: 100px;
+    height: 40px;
+    background-color: #0069d9;
+    color: white;
+    border: 1px solid white;
+}
+
+.box{
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 300px;
+    height: 310px;
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.icon{
+    width: 200px;
+}
+
+
+
+
