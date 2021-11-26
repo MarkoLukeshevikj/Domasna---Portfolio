@@ -1,66 +1,76 @@
 *{
     margin: 0;
 }
-
+body{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 0px auto 60px;
+    grid-template-areas: "header" "main" "footer";
+}
 main{ 
     background-color: gray;
     color: white;
+    grid-area: main;
 }
 
 .tekst{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    height: calc(100vh - 60px);
+    display: grid;
+    row-gap: 30px;
+    justify-items: center;
+    grid-template-areas: "prv" "vtor" "tret";
 }
 
 .tekst > p:first-child{
+    margin-top: 70px;
     width: 70vw;
-    height: 40vh;
-    margin-top: 100px;
     overflow: auto;
-    padding: 10px;
+    grid-area: prv;
 }
 
 .tekst > p:nth-child(2){
     width: 70vw;
-    height: 40vh;
-    margin-top: 100px;
     overflow: auto;
-    padding: 10px;
+    grid-area: vtor;
 }
 
 .tekst > p:last-child{
     width: 70vw;
-    height: 40vh;
-    margin: 100px;
+    margin-bottom: 20px;
     overflow: auto;
-    padding: 10px;
+    grid-area: tret;
 }
 
 
 @media screen and (min-width: 1200px) {
-    main{
-        height: calc(100vh - 50px);
-    }
     .tekst{
-       flex-direction: row;
-       flex-wrap: wrap;
-       align-items: flex-start;
-       justify-content: space-between;
-      
+        display: grid;
+        grid-template-columns: 50vw 50vw;
+        grid-template-rows: 60vh 40vh;
+        row-gap: 50px;
+        column-gap: 20px;
     }
     .tekst > p:first-child{
+        padding-left: 10px;
         width: 40vw;
-        height: 60vh;
+        height: 100%;
+        justify-self: start;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
     }
     .tekst > p:nth-child(2){
         width: 40vw;
-        height: 60vh;
+        height: 100%;
+        margin-top: 70px;
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;;
     }
     .tekst > p:last-child{
-        width: 60vw;
-        height: 20vh;
-        margin: auto;
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        width: 40vw;
+        height: 150px;
+        align-self: flex-start;
     }
 }
+

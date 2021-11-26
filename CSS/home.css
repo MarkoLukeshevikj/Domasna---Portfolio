@@ -1,12 +1,18 @@
 *{
     margin: 0;
 }
+body{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 0px calc(100vh - 60px) 60px;
+    grid-template-areas: "header" "main" "footer";
+}
 
 main{
     background-image: url(../assets/images/slika.jpg);
-    height: calc(100vh - 50px);
     background-size: cover;
     background-position: top;
+    grid-area: main;
 }
 
 .container{
@@ -22,11 +28,11 @@ main{
     border-radius: 20px;
     box-shadow: 2px 2px 7px black;
     text-shadow: 2px 2px 11px white;
-    display: flex;
-    flex-direction: column;
+    display: grid;
     align-items: center;
-    justify-content: center;   
-    flex-wrap: wrap;
+    justify-items: center;
+    
+    
 }
 span{
     color: crimson;
@@ -34,7 +40,7 @@ span{
 
 @media screen and (min-width: 998px) {
     .container{
-        width: 60%;
+        width: 50%;
         height: 25%;
         top: 35%;
     }

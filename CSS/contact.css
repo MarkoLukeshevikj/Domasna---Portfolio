@@ -1,18 +1,27 @@
 *{
     margin: 0;
 }
-
+body{
+    display: grid;
+    grid-template-rows: 0px auto 60px;
+    grid-template-areas: "header" "main" "footer";
+}
 main{
     background-color: gray;
-    height: calc(100vh - 50px);
+    height: calc(100vh - 60px);
     font-size: 20px;
     color: white;
+    grid-area: main;
+    display: grid;
+    grid-template-areas: "contact" "aside";
 }
 .contact{
     position: relative;
     top: 70px;
     left: 10px;
-    display: inline-block;
+    grid-area: contact;
+    grid-column: 1 / 2;
+    width: 50vw;
 }
 div{
     margin-top: 10px;
@@ -34,6 +43,9 @@ input{
 
 aside{
     margin: 100px 10px;
+    grid-area: aside;
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
 }
 p{
     margin-top: 10px;
@@ -52,8 +64,8 @@ a{
         height: 150px;
     }
     aside{
-        float: right;
-        margin-top: 70px;
-    
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    justify-self: flex-end;
     }
 }

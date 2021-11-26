@@ -5,23 +5,25 @@ nav{
     left: 0px;
     right: 0px;
     background-color: #343A40;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
     font-size: 20px;   
+    grid-area: header;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: end;
+    column-gap: 50px;
+    padding-right: 20px;
 }
 nav a{
     text-decoration: none;
-    color: rgba(255, 255, 255, 75%);
-    padding: 20px;
+    color: rgba(255, 255, 255, 75%); 
 }
-
 footer{
     background-color: #343A40;
     color: white;
-    height: 50px;
     margin: 0;
-    display: flex;
+    grid-area: footer;
+    display: grid;
     align-items: center;
-    justify-content: center;
+    justify-items: center;
 }
